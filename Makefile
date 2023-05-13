@@ -19,8 +19,8 @@ else
 	SHOBJ_CFLAGS ?= -dynamic -fno-common -g -ggdb
 	SHOBJ_LDFLAGS ?= -bundle -undefined dynamic_lookup
 endif
-CFLAGS = -I$(RM_INCLUDE_DIR) -I$(REDIS_INCLUDE_DIR) -g -fPIC -O3 -std=gnu11 -Wall -D_GNU_SOURCE
-CC=gcc
+CFLAGS = -I$(RM_INCLUDE_DIR) -I$(REDIS_INCLUDE_DIR) -g -fPIC -O3 -std=c++17 -Wall -D_GNU_SOURCE -fpermissive
+CC=g++
 
 MODULE = module-shm
 MODULE_SRC = \

@@ -1,0 +1,6 @@
+[submodule "KeyDB"]
+	path = KeyDB
+	url = https://github.com/Snapchat/KeyDB
+[submodule "redis"]
+	path = redis
+	url = https://github.com/Snapchat/KeyDB

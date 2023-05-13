@@ -236,7 +236,7 @@ static inline void call_once(once_flag *flag, void (*func)(void))
     pthread_once(flag, func);
 }
 
-#if __STDC_VERSION__ < 201112L
+#if 0 //__STDC_VERSION__ < 201112L
 /* TODO take base into account */
 static inline int timespec_get(struct timespec *ts, int base)
 {
